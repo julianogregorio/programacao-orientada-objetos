@@ -1,12 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Produto p1 = new Produto();
-        p1.setNome("Camisa");
-        p1.setPreco(100.50); 
+        Produto p1 = new Produto("Camisa", 100.50);
         
-        Produto p2 = new Produto();
-        p2.setNome("Bermuda");
-        p2.setPreco(80.05); 
+        Produto p2 = new Produto("Bermuda"); 
 
 
         System.out.println(p1.getNome() + " - R$ " + p1.getPreco()); 

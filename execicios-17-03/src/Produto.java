@@ -2,13 +2,15 @@ public class Produto {
     private String nome;
     private double preco;
 
-    public void setNome(String nome) {
+    public Produto(String nome, double preco) {
         this.nome = nome;
-    }
-
-    public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    public Produto(String nome) {
+        this.nome = nome;
+        this.preco = 0.0;
+    }   
 
     public String getNome() {
         return nome;
@@ -16,7 +18,5 @@ public class Produto {
 
     public double getPreco() {
         return preco;
-    }
+    }   
 }
-
-
