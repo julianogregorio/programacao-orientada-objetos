@@ -1,8 +1,9 @@
-public class Cliente {
 
+public class Jogador {
+    
     private String nome;
 
-    public Cliente (String nome){
+    public Jogador(String nome){
         this.nome = nome;
     }
 
