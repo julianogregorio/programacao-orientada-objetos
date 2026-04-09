@@ -45,5 +45,14 @@ public class App {
             System.out.println(jogador.getNome());
         }  
 
+        Agenda agenda1 = new Agenda("Trabalho");
+        agenda1.addContato ("André", "+11 11111-1111");
+        agenda1.addContato ("Bruno", "+22 22222-2222");
+
+        System.out.println("Agenda: " + agenda1.getNomeAgenda());
+        for (Contato contato : agenda1.getContato()) {
+            System.out.println("Nome: " + contato.getNome() + " - Telefone: " + contato.getTelefone());
+        }   
+
     }
 }
